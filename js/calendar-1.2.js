@@ -1,6 +1,5 @@
 // JavaScript Document
 $(document).ready(function(e) {
-
 	var days = new Array("日","一","二","三","四","五","六");//星期
 	var today = new Date();//当天日期，备用
 	var month_big = new Array("1","3","5","7","8","10","12"); //包含所有大月的数组

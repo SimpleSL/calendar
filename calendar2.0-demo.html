@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>日历控件</title>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/calendar-2.0.js"></script>
+<style>
+li {
+	margin-bottom:10px;
+}
+</style>
+</head>
+
+<body>
+<div style="width:1000px; margin:0 auto;">
+<p>Version:2.0</p>
+<ul>
+<li>在v1.2的基础上对年月的显示、调整方式作出了重要改变</li>
+<li>在UI上做出重大调整，在js文件的前几行可以对关键UI背景色、前景色进行自定义</li>
+</ul>
+<p>演示区：</p>
+<input id="calendar"  placeholder="点我试试" type="text" /><br />
+<p style="margin-top:300px;">历史版本：</p>
+<p>Version:1.2</p>
+<ul>
+<li>在v1.1的基础上引入jquery框架，并全部改用jquery语法。</li>
+</ul>
+<p>Version:1.1</p>
+<ul>
+<li>在v1.0的基础上，将所有与日历相关的代码全部集成到calendar-1.1.js文件中，目标是如果要用到日历，只需要引用该js文件并且将input的ID设置为calendar即可。</li>
+<li>首次用到了prototype对日期格式进行控制，在calendar-1.1.js文件的前几行可以自定义日期间隔符。</li>
+<li>增加了在input失去焦点的时候隐藏选择器功能。</li>
+<li>出于功能需要，增加选择器定位的运算，增加了选择器最小宽度的限制</li>
+<li>这个版本比较明显的缺陷就是如果一个页面要用到多个日历输入框，那么只有第一个ID为calendar的元素才能正常调出日历选择器。</li>
+</ul>
+<p>Version:1.0</p>
+<p style="text-indent:2em">v1.0是最初版，所有代码全部放在一个HTML文件中，这个版本是在最初探索日历实现方法的时候形成的一个雏形，并没有多大实际用途，但也展示了日历开发的基础原理，包括大小月、闰平年的判断，每一天是星期几以及它们如何排布，日历的显示与隐藏的控制等等。后续的各个版本的核心部分都来自这里。
+</p>
+</body>
+</html>

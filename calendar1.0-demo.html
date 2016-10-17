@@ -4,6 +4,11 @@
 <meta charset="utf-8">
 <title>日历控件</title>
 <style>
+#container {
+	width:1000px;
+	margin:0 auto;
+}
+
 #date_text {
 	background-image: url(images/input.png);
 	background-repeat:no-repeat;
@@ -318,7 +323,9 @@ function getDefaultStyle(obj,attribute){
 
 <body>
 <div id="container">
-<div id="input_bg"><input id="date_text" type="text" readonly onClick="showCalendar()" /></div>
+<p>Version:1.0</p>
+<p style="text-indent:2em">版本介绍：1.0是最初版，所有代码全部放在一个HTML文件中，这个版本是在最初探索日历实现方法的时候形成的一个雏形，并没有多大实际用途，但也展示了日历开发的基础原理，包括大小月、闰平年的判断，每一天是星期几以及它们如何排布，日历的显示与隐藏的控制等等。后续的各个版本的核心部分都来自这里。</p>
+<div id="input_bg"><input id="date_text" type="text" placeholder="点我试试" readonly onClick="showCalendar()" /></div>
 <div id="cal_body">
 	<div class="line"><div class="btn" id="year_down" onClick="yearDown()">-</div><input class="year_month" id="text_year" value="2015" onChange="changed()"><div class="btn" id="year_up" onClick="yearUp()">+</div><span class="end_tag">年</span></div>
     <div class="line"><div class="btn" id="month_down" onClick="monthDown()">-</div><input class="year_month" id="text_month" value="5" onChange="changed()"><div class="btn" id="month_up" onClick="monthUp()">+</div><span class="end_tag">月</span></div>
